@@ -6,7 +6,7 @@ const Movies = () => {
     <div>
       <h1>Movies Page</h1>
       {movies.map(({ title, time, genres, metascore }) =>
-      <div key={title}>{title} -- {time} -- {genres} -- {metascore}</div>
+        <div key={title}>{title} -- {time} -- {genres} -- {metascore}</div>
       )}
     </div>
   );
