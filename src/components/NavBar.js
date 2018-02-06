@@ -10,10 +10,45 @@ const NavBar = () => {
     textDecoration: 'none',
     color: 'white'
   }
-  
+
   return (
-    <div>
-      {/*{code here}*/}
+    <div className="navbar">
+      <NavLink
+        to="/"
+        exact
+        style={link}
+        activeStyle={{
+          background: 'darkblue'
+        }}
+        >Home
+      </NavLink>
+      <NavLink
+        to="/actors"
+        exact
+        style={link}
+        activeStyle={{
+          background: 'darkblue'
+        }}
+        >Actors
+      </NavLink>
+      <NavLink
+        to="/movies"
+        exact
+        style={link}
+        activeStyle={{
+          background: 'darkblue'
+        }}
+        >Movies
+      </NavLink>
+      <NavLink
+        to="/directors"
+        exact
+        style={link}
+        activeStyle={{
+          background: 'darkblue'
+        }}
+        >Directors
+      </NavLink>
     </div>
   );
 };
